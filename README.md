@@ -39,9 +39,7 @@ A modern React application for managing ping pong tournaments with player statis
 - **React DOM** - React renderer for the browser
 - **React Hooks** - State and lifecycle features
 - **Tailwind CSS** - Utility-first CSS framework
-- **Recharts** (optional) - For data visualization if adding statistics charts
 - **PapaParse** - For CSV parsing and export functionality
-- **React Router** (optional) - For multi-page navigation if expanding the app
 
 ### Developer Dependencies
 
@@ -101,21 +99,14 @@ A modern React application for managing ping pong tournaments with player statis
    yarn add papaparse
    ```
 
-7. (Optional) For charts and visualizations:
-   ```bash
-   npm install recharts
-   # or
-   yarn add recharts
-   ```
-
-8. Start the development server:
+7. Start the development server:
    ```bash
    npm start
    # or
    yarn start
    ```
 
-9. Open your browser and navigate to `http://localhost:3000` (if using Create React App) or `http://localhost:5173` (if using Vite)
+8. Open your browser and navigate to `http://localhost:3000` (if using Create React App) or `http://localhost:5173` (if using Vite)
 
 ## Usage Guide
 
