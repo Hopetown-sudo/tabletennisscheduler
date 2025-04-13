@@ -663,7 +663,7 @@ const sortedPlayers = useMemo(() => {
 
   return (
     <div className="w-full max-w-7xl mx-auto px-4 md:px-6 py-6">
-      <h1 className="text-2xl md:text-3xl font-bold mb-6">🏓 Table Tennis Tournament - Male Match Maker </h1>
+      <h1 className="text-2xl md:text-3xl font-bold mb-6">🏓 Table Tennis Tournament - Match Maker </h1>
   
       {!drawn && (
         <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
