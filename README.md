@@ -38,7 +38,7 @@ A modern React application for managing ping pong tournaments with player statis
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/ping-pong-tournament.git
+   git clone https://github.com/Hopetown-sudo/ping-pong-tournament.git
    cd ping-pong-tournament
    ```
 
