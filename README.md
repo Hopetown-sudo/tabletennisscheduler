@@ -2,7 +2,6 @@
 
 A modern React application for managing ping pong tournaments with player statistics tracking and an intuitive bracket system.
 
-
 ## Features
 
 - **Complete Tournament Management**
@@ -34,11 +33,30 @@ A modern React application for managing ping pong tournaments with player statis
 - Node.js 14.0 or higher
 - npm or yarn
 
+### Dependencies
+
+- **React** - UI library
+- **React DOM** - React renderer for the browser
+- **React Hooks** - State and lifecycle features
+- **Tailwind CSS** - Utility-first CSS framework
+- **Recharts** (optional) - For data visualization if adding statistics charts
+- **PapaParse** - For CSV parsing and export functionality
+- **React Router** (optional) - For multi-page navigation if expanding the app
+
+### Developer Dependencies
+
+- **Vite** or **Create React App** - Development environment
+- **ESLint** - Code linting
+- **Prettier** - Code formatting
+- **Jest** or **React Testing Library** - Testing framework
+- **PostCSS** - For processing Tailwind CSS
+- **Autoprefixer** - For CSS compatibility
+
 ### Installation
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Hopetown-sudo/ping-pong-tournament.git
+   git clone https://github.com/hopetown-sudo/ping-pong-tournament.git
    cd ping-pong-tournament
    ```
 
@@ -49,14 +67,55 @@ A modern React application for managing ping pong tournaments with player statis
    yarn install
    ```
 
-3. Start the development server:
+3. Install Tailwind CSS with specific version:
+   ```bash
+   npm install -D tailwindcss@3.4.3 postcss autoprefixer
+   npx tailwindcss init -p
+   ```
+
+4. Configure Tailwind CSS by updating the `tailwind.config.js` file:
+   ```javascript
+   /** @type {import('tailwindcss').Config} */
+   module.exports = {
+     content: [
+       "./src/**/*.{js,jsx,ts,tsx}",
+     ],
+     theme: {
+       extend: {},
+     },
+     plugins: [],
+   }
+   ```
+
+5. Add Tailwind directives to your CSS file (src/index.css):
+   ```css
+   @tailwind base;
+   @tailwind components;
+   @tailwind utilities;
+   ```
+
+6. Install additional packages for CSV export:
+   ```bash
+   npm install papaparse
+   # or
+   yarn add papaparse
+   ```
+
+7. (Optional) For charts and visualizations:
+   ```bash
+   npm install recharts
+   # or
+   yarn add recharts
+   ```
+
+8. Start the development server:
    ```bash
    npm start
    # or
    yarn start
    ```
 
-4. Open your browser and navigate to `http://localhost:3000`
+9. Open your browser and navigate to `http://localhost:3000` (if using Create React App) or `http://localhost:5173` (if using Vite)
 
 ## Usage Guide
 
