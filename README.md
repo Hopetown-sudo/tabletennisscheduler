@@ -1,12 +1,138 @@
-# React + Vite
+# Ping Pong Tournament Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React application for managing ping pong tournaments with player statistics tracking and an intuitive bracket system.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Complete Tournament Management**
+  - Easily create tournaments with any number of players
+  - Automatic bracket generation with first-round bye handling
+  - Support for multiple rounds including quarterfinals, semifinals, finals, and 3rd place match
+  - Track tournament progression from start to finish
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Player Statistics**
+  - Individual player cards showing wins, losses, and match count
+  - Real-time status updates as the tournament progresses
+  - Detailed match history for each player
+  - Sorting options by tournament progress, wins, or name
+
+- **Modern User Interface**
+  - Clean, responsive design that works on all screen sizes
+  - Intuitive controls for tournament management
+  - Visual indicators for active and eliminated players
+  - Medal indicators for final standings (🥇, 🥈, 🥉)
+
+- **Data Export**
+  - Export tournament results to CSV files for record-keeping
+  - Comprehensive player statistics in downloadable format
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 14.0 or higher
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/ping-pong-tournament.git
+   cd ping-pong-tournament
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm start
+   # or
+   yarn start
+   ```
+
+4. Open your browser and navigate to `http://localhost:3000`
+
+## Usage Guide
+
+### Setting Up a Tournament
+
+1. Enter player names in the text area (separated by commas or new lines)
+2. Click "Submit Players" to register participants
+3. Click "Draw Round 1" to create the tournament brackets
+
+### Managing Matches
+
+1. Click on a player's name in a match to mark them as the winner
+2. When all matches in a round are complete, click "Start Next Round"
+3. Continue through all rounds until the tournament completes
+4. View final standings with 1st, 2nd, 3rd, and 4th place winners
+
+### Using Player Cards
+
+- View each player's current tournament status, wins, and losses
+- Click "View Match History" to see detailed information about each match
+- Sort players by tournament progress, win count, or alphabetically
+
+### Exporting Data
+
+- Click "Export CSV" in the Players section to download complete player statistics
+- After the tournament finishes, click "Export Results to CSV" in the Final Standings section for final rankings
+
+## Customization
+
+### Styling
+
+The application uses Tailwind CSS for styling. You can customize the appearance by modifying the Tailwind classes in the component JSX files.
+
+### Tournament Logic
+
+To modify the tournament structure or scoring rules, edit the logic in the main `PingPongScheduler` component.
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── PingPongScheduler.jsx  # Main tournament component
+│   └── PlayerCard.jsx         # Player statistics card component
+├── utils/
+│   └── tournamentHelpers.js   # Helper functions for tournament logic
+├── styles/
+│   └── tailwind.css           # Tailwind CSS configuration
+└── App.js                     # Application entry point
+```
+
+## Technical Details
+
+- Built with React (Hooks, Context API)
+- Styled with Tailwind CSS
+- Responsive design for desktop and mobile devices
+- No external tournament management libraries used
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Inspired by tournament bracket systems in professional ping pong competitions
+- Player card design influenced by modern sports statistics dashboards
+- Thanks to all contributors who have helped improve this project
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+---
+
+Built with ❤️ for ping pong enthusiasts everywhere.
