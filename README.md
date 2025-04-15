@@ -3,7 +3,7 @@
 A modern React application for managing ping pong tournaments with player statistics tracking and an intuitive bracket system.
 Currently supports 8-12 players.
 
-![Screenshot](https://ibb.co/v4xy2HHj)
+![Screenshot](https://i.ibb.co/k2gbYxxS/Screenshot-2025-04-15-010625.jpg)
 
 ## Features
 
